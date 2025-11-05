@@ -7,6 +7,11 @@ import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 
+
+st.set_page_config(page_title="Rendimiento académico - Contour", layout="centered")
+
+st.title("RENDIMIENTO ACADÉMICO SEGÚN HORAS DE ESTUDIO Y SUEÑO")
+
 #Cargar el archivo .csv
 
 file_path = 'Student_Performance.csv'
@@ -66,4 +71,6 @@ fig.update_layout(
     yaxis_title="Horas de Sueño"
 )
 fig.show()
+
+st.plotly_chart(fig)
 
