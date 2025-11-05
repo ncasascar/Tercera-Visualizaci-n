@@ -10,6 +10,8 @@ import pandas as pd
 
 st.set_page_config(page_title="Rendimiento académico - Contour", layout="centered")
 
+st.title("RENDIMIENTO ACADÉMICO SEGÚN HORAS DE ESTUDIO Y SUEÑO")
+
 st.write("""
 Este análisis explora la relación entre las horas dedicadas al estudio y las horas de sueño en el rendimiento académico promedio de un grupo de estudiantes.
 Los contornos representan niveles de rendimiento similares, mientras que los tonos más cálidos corresponden a mejores resultados.
