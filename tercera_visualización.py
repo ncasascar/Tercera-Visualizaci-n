@@ -18,7 +18,12 @@ Los contornos representan niveles de rendimiento similares, mientras que los ton
 El gráfico permite identificar los rangos combinados de estudio y descanso donde el rendimiento tiende a ser máximo.
 """)
 
-#Cargar el archivo .csv
+
+
+st.caption(
+    "Datos: **Student Performance – Multiple Linear Regression** "
+    "— Fuente: [Kaggle](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression) "
+)
 
 file_path = 'Student_Performance.csv'
 
@@ -77,9 +82,6 @@ fig.update_layout(
     yaxis_title="Horas de Sueño"
 )
 fig.show()
-with st.sidebar:
-    st.info("Fuente de datos: Kaggle\n\n"
-            "[Student Performance – Multiple Linear Regression](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression)")
 
 st.plotly_chart(fig, theme=None)
 
