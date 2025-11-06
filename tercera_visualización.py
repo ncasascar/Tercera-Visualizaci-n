@@ -20,10 +20,7 @@ El gráfico permite identificar los rangos combinados de estudio y descanso dond
 
 
 
-st.caption(
-    "Datos: **Student Performance – Multiple Linear Regression** "
-    "— Fuente: [Kaggle](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression) "
-)
+
 
 file_path = 'Student_Performance.csv'
 
@@ -85,3 +82,7 @@ fig.show()
 
 st.plotly_chart(fig, theme=None)
 
+st.caption(
+    "Datos: **Student Performance – Multiple Linear Regression** "
+    "— Fuente: [Kaggle](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression) "
+)
