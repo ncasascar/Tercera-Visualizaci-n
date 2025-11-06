@@ -77,6 +77,9 @@ fig.update_layout(
     yaxis_title="Horas de Sueño"
 )
 fig.show()
+with st.sidebar:
+    st.info("Fuente de datos: Kaggle\n\n"
+            "[Student Performance – Multiple Linear Regression](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression)")
 
 st.plotly_chart(fig, theme=None)
 
